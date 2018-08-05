@@ -3,7 +3,7 @@ require "yaml"
 def load_library(file_path)
   path = YAML.load_file(file_path)
   file_path.each do |english, emoticons|
-  emoticons.each do
+  emoticons.each do | us, japan |
     hash = {"get_meaning" => {}, "get_emoticon" => {}}
 
   return hash
