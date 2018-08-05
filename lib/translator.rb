@@ -1,4 +1,4 @@
-# require modules here
+require "yaml"
 
 def load_library(path)
   hash = {"get_meaning" => {}, "get_emoticon" => {}}
