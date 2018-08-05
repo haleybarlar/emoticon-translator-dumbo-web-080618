@@ -1,11 +1,8 @@
 # require modules here
 
 def load_library(path)
-  hash = {}
-  hash.each do |key, value|
-    hash["get_meaning"] = {}
-    hash["get_emoticon"] = {}
-  end
+  hash = {"get_meaning" => {}, "get_emoticon" => {}}
+
   return hash
 end
 
