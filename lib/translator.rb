@@ -19,4 +19,5 @@ def get_english_meaning(file_path, emoticon)
   load_library(file_path)
   if emoticon != file_path
     return "Sorry, that "
+  end
 end
