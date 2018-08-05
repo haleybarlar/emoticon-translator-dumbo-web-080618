@@ -2,7 +2,8 @@
 
 def load_library(path)
   hash = {}
-  
+  hash["get_meaning"] => {}
+  hash["get_emoticon"] => {}
   return hash
 end
 
