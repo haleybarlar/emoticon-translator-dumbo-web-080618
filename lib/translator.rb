@@ -5,7 +5,7 @@ def load_library(path)
   hash.each do |key, value|
     hash["get_meaning"] = {}
     hash["get_emoticon"] = {}
-
+  end
   return hash
 end
 
