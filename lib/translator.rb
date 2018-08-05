@@ -20,6 +20,7 @@ def get_japanese_emoticon (file_path, emoticon)
   if hash != file_path
     return "Sorry, that emoticon was not found"
   end
+  result
 end
 
 def get_english_meaning(file_path, emoticon)
