@@ -1,6 +1,7 @@
 require "yaml"
 
 def load_library(file_path)
+  file_path = YAML.load_file(Rails.root.join('lib', 'emoticons.yml'))
   hash = {"get_meaning" => {}, "get_emoticon" => {}}
   return hash
 end
