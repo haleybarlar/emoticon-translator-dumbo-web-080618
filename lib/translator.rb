@@ -1,7 +1,7 @@
 require "yaml"
+path = YAML.load_file('emoticons.yml')
 
 def load_library(path)
-  path = YAML.load_file('emoticons.yml')
   hash = {"get_meaning" => {}, "get_emoticon" => {}}
   return hash
 end
