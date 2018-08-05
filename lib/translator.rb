@@ -5,7 +5,7 @@ def load_library(file_path)
   file_path.each do |english, emoticons|
     emoticons.each do | us, japan |
       hash = {"get_meaning" => {file_path[japan] => file_path[english]}, "get_emoticon" => {}}
-
+end
   return hash
 end
 
