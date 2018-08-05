@@ -2,7 +2,8 @@ require "yaml"
 
 def load_library(file_path)
   path = YAML.load_file(file_path)
-  file_path.each |key, value|
+  file_path.each do |english, emoticons|
+  emoticons.each do
     hash = {"get_meaning" => {}, "get_emoticon" => {}}
 
   return hash
