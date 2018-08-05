@@ -2,10 +2,9 @@ require "yaml"
 
 def load_library(file_path)
   path = YAML.load_file(file_path)
-  hash = {}
   
   file_path.each do | english, emoticons |
-    hash << {"get_meaning" => {[emoticons] => [english]}, "get_emoticon" => {[english] => [emoticons]}}
+    hash = {"get_meaning" => {}, "get_emoticon" => {}}
   end
   return hash
 end
